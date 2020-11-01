@@ -1,0 +1,27 @@
+$blue: #0077B2;
+$orange: #F99F1B;
+
+@mixin h3 {
+  font-family: 'HelveticaNeue-Thin', sans-serif;
+  font-weight: 300;
+}
+
+@mixin h4 {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: 400;
+}
+
+@mixin h5 {
+  font-family: 'HelveticaNeue-Medium', sans-serif;
+  font-weight: 500;
+}
+
+@mixin h7 {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin rub {
+  font-family: 'RUBSN', sans-serif;
+  font-weight: 400;
+}

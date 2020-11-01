@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="1073px" viewBox="0 0 1366 1073" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mask</title>
+    <defs>
+        <polygon id="path-1" points="0 86 1366 6.9638067e-13 1366 1073 0 1073"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-десктоп" transform="translate(0.000000, -1991.000000)">
+            <g id="14547-[Converted]-01" transform="translate(0.000000, 1991.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#0077B2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

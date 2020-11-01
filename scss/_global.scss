@@ -1,0 +1,37 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	@include h4;
+  font-size: 16px;
+	line-height: 24px;
+	color: #292929;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 0 83px;
+	position: relative;
+}
