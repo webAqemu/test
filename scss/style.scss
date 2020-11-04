@@ -3,7 +3,7 @@
 @import 'fonts';
 
 
-.layer {
+#layer {
   position: absolute;
   width: 100%;
   &.active {
@@ -13,6 +13,7 @@
     top: 161px;
     bottom: 0;
     height: 1000px;
+    transition: background-color 1s;
   }
 }
 
@@ -201,7 +202,6 @@
       max-width: 1366px;
       width: 100%;
       padding: 25px 107px 30px 135px;
-      overflow: visible;
       left: 83px;
       opacity: 1;
     }
@@ -373,7 +373,6 @@
   }
 }
 
-
 .products {
   margin-top: 125px;
   padding-bottom: 60px;
@@ -389,6 +388,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   &__wrapper {
@@ -403,19 +403,29 @@
     width: 592px;
     padding: 0px 30px 0px 40px;
     cursor: pointer;
+    height: 48px;
+
+    &--big {
+      height: 96px;
+    }
 
     &--active {
       background-image: url(../images/products-item-bg.svg);
       background-repeat: no-repeat;
-      padding: 75px 30px 112px 40px;
+      padding: 0px 30px 0px 40px;
       margin-top: 0;
+      height: 495px;
+      transition: height .5s;
       & .products__item-title {
         color: #ffffff;
+        opacity: 1;
+        padding-top: 75px;
+        padding-bottom: 32px;
       }
 
       & .products__item-text,
       & .products__item-link {
-        display: block;
+        display: inline-block;
       }
 
       & svg {
@@ -426,7 +436,7 @@
         fill: #ffffff;
       }
 
-      &.products__item--big {
+      &.products__item--big .products__item-text {
         padding-bottom: 65px;
       }
     }
@@ -449,22 +459,31 @@
     line-height: 48px;
     color: $blue;
     @include h5;
+    opacity: .5;
   }
 
   &__item-text {
     font-size: 18px;
     line-height: 28px;
     color: #ffffff;
-    margin-top: 32px;
     display: none;
+    padding-bottom: 94px;
   }
 
   &__item-link {
     color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 95px;
+    margin-left: auto;
     display: none;
+    transition: all .3s;
+    padding: 15px 35px;
+    border: 1px solid #ffffff;
+    margin-bottom: 78px;
+
+    &:hover {
+      background-color: $orange;
+      border-color: $orange;
+    }
   }
 }
 
@@ -501,18 +520,32 @@
   }
 
   &__item {
+    outline: none;
     max-width: 490px;
     width: 100%;
     color: #ffffff;
-    margin-right: 275px;
+    margin-right: 230px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 15px;
+    &:hover .catalog__info,
+    &:hover .catalog__btn {
+      transition: all .3s;
+      box-shadow: 0px 11px 14px #00496D;
+    }
+    &:hover .catalog__available {
+      transition: all .3s;
+      opacity: 1;
+    }
   }
 
   &__info {
     background-image: url(../images/catalog-item-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 37px 53px 117px;
-    margin: 0 -8px;
+    width: 100%;
     &--available {
       padding-bottom: 70px;
     }
@@ -542,7 +575,10 @@
     font-size: 18px;
     line-height: 21px;
     padding: 11px 37px 15px;
+    height: 47px;
+    overflow: hidden;
     background-color: $orange;
+    opacity: 0;
   }
 
   &__btn {
@@ -558,6 +594,8 @@
     position: relative;
     cursor: pointer;
     outline: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
     & svg {
       position: absolute;
       right: 23px;
@@ -591,13 +629,20 @@
     line-height: 24px;
     text-decoration: none;
     display: block;
-    width: 142px;
+    width: 172px;
     margin-left: auto;
+    padding: 15px;
+    margin-top: 80px;
+    transition: all ease-in .3s;
     
 
     & svg {
       margin-bottom: -5px;
       margin-left: 16px;
+    }
+
+    &:hover {
+      background-color: $orange;
     }
   }
 }
@@ -638,6 +683,7 @@
     line-height: 21px;
     color: #ffffff;
     padding: 12px 15px 15px;
+    cursor: pointer;
     & svg {
       margin-left: 60px;
     }
@@ -713,7 +759,7 @@
 
 .news {
 
-  margin-bottom: 200px;
+  margin-bottom: 110px;
 
   &__title {
     @include h5;
@@ -759,6 +805,31 @@
     color: #989898;
     margin-top: 45px;
     transition: all .3s;
+  }
+
+  &__all {
+    display: block;
+    margin-top: 90px;
+    max-width: 152px;
+    margin-left: auto;
+    text-decoration: none;
+    color: $orange;
+    padding: 15px;
+    transition: all .3s;
+
+    & svg {
+      margin-left: 15px;
+      margin-bottom: -3px;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: $orange;
+
+      & svg path {
+        fill: #ffffff;
+      }
+    }
   }
 }
 

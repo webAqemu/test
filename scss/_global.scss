@@ -29,6 +29,10 @@ body {
 	overflow-x: hidden;
 }
 
+button {
+	@include h4;
+}
+
 .container {
 	max-width: 1366px;
 	margin: 0 auto;

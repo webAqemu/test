@@ -106,7 +106,7 @@
         </div>
       </div>
       <ul class="header__menu">
-        <li class="header__item">
+        <li class="header__item header__item--hover">
           <a href="#" class="header__link">
             ГАЗ в лизинг
           </a>
@@ -138,7 +138,7 @@
             </div>
           </div>
         </li>
-        <li class="header__item">
+        <li class="header__item header__item--hover">
           <a href="#" class="header__link">
             Коммерческая техника
           </a>
@@ -187,7 +187,7 @@
     </div>
   </header>
 
-  <div class="layer"></div>
+  <div id="layer"></div>
 
   <section class="main-screen">
     <div class="container">
@@ -376,7 +376,7 @@
         <div class="catalog__title">Каталог</div>
         <div class="catalog__slider">
           <div class="catalog__slide">
-            <div class="catalog__item">
+            <a class="catalog__item" href="#">
               <div class="catalog__info catalog__info--available">
                 <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
                 <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
@@ -388,24 +388,10 @@
                   <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
           <div class="catalog__slide">
-            <div class="catalog__item">
-              <div class="catalog__info">
-                <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
-                <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
-              </div>
-              <button class="catalog__btn">
-                Запрос на лизинг
-                <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="catalog__slide">
-            <div class="catalog__item">
+            <a class="catalog__item" href="#">
               <div class="catalog__info catalog__info--available">
                 <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
                 <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
@@ -417,10 +403,10 @@
                   <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
           <div class="catalog__slide">
-            <div class="catalog__item">
+            <a class="catalog__item" href="#">
               <div class="catalog__info catalog__info--available">
                 <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
                 <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
@@ -432,10 +418,10 @@
                   <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
           <div class="catalog__slide">
-            <div class="catalog__item">
+            <a class="catalog__item" href="#">
               <div class="catalog__info catalog__info--available">
                 <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
                 <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
@@ -447,8 +433,24 @@
                   <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
+          <div class="catalog__slide">
+            <a class="catalog__item" href="#">
+              <div class="catalog__info catalog__info--available">
+                <div class="catalog__item-title">MAN TGS 18.400 4X2 BLS</div>
+                <div class="catalog__item-price">От 20 000 <span>у</span> в месяц</div>
+                <span class="catalog__available">Есть в наличии</span>
+              </div>
+              <button class="catalog__btn">
+                Запрос на лизинг
+                <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.88862 0L0 1.88869L6.11979 8.00847L0 14.1283L1.88862 16.0169L9.8971 8.00847L1.88862 0Z" fill="black" />
+                </svg>
+              </button>
+            </a>
+          </div>
+
         </div>
         <a href="#" class="catalog__all-link">
           Весь каталог
@@ -564,6 +566,12 @@
             <div class="news__date">20.11.2019 15:37:00</div>
           </a>
         </div>
+        <a class="news__all" href="#">
+          Все новости
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.58102 0L0.0461426 1.53493L5.01968 6.50847L0.0461426 11.482L1.58102 13.0169L8.0895 6.50847L1.58102 0Z" fill="#F99F1B" />
+          </svg>
+        </a>
       </div>
     </div>
   </section>

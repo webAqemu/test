@@ -1,3 +1,11 @@
+
+$(".header__item--hover").mouseover(function () {
+  $("#layer").addClass("active")
+});
+$(".header__item--hover").mouseout(function () {
+  $("#layer").removeClass("active")
+});
+
 $('.main-screen__slider').slick({
   infinite: true,
   slidesToShow: 1,
