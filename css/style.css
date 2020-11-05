@@ -289,14 +289,25 @@ button {
   line-height: 22px;
   color: #292929;
   padding: 7px 19px 9px 14px;
-  border: 1px solid #C6E2F7; }
+  border: 1px solid #C6E2F7;
+  transition: all .3s; }
   .header__btn svg {
     margin-left: 32px; }
   .header__btn--2 {
     margin-top: 45px; }
+  .header__btn:hover {
+    border-color: #F99F1B;
+    background-color: #F99F1B;
+    color: #ffffff; }
+    .header__btn:hover svg path {
+      fill: #ffffff;
+      transition: all .3s; }
 
 .main-screen__inner {
   position: relative; }
+
+.main-screen__slide {
+  text-decoration: none; }
 
 .main-screen__item {
   padding-top: 80px;
@@ -432,6 +443,8 @@ button {
     display: none;
     padding-bottom: 94px; }
   .products__item-link {
+    font-size: 18px;
+    line-height: 21px;
     color: #ffffff;
     text-decoration: none;
     margin-left: auto;
@@ -590,21 +603,24 @@ button {
     border: none;
     box-shadow: none;
     background-color: #F99F1B;
+    border: 1px solid #F99F1B;
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
     padding: 12px 15px 15px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .3s; }
     .request__btn svg {
       margin-left: 60px; }
+    .request__btn:hover {
+      background-color: transparent;
+      border-color: #ffffff; }
 
 .offers {
   margin-top: 175px;
   margin-bottom: 100px; }
   .offers__inner {
-    display: flex;
-    border-left: 2px solid #E9E9E9;
-    border-right: 2px solid #E9E9E9; }
+    display: flex; }
   .offers__item {
     padding: 30px 17px 67px 28px;
     width: 33.3%;
@@ -613,7 +629,10 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 496px; }
+    height: 496px;
+    border-right: 1px solid #E9E9E9;
+    border-left: 1px solid #E9E9E9;
+    border-collapse: collapse; }
     .offers__item:hover {
       margin-top: -15px;
       margin-bottom: 15px;
@@ -622,6 +641,10 @@ button {
         color: #F99F1B; }
       .offers__item:hover .offers__price {
         color: #F99F1B; }
+    .offers__item::nth-last-child(3) {
+      border-right-width: 2px; }
+    .offers__item:nth-child(1) {
+      border-left-width: 2px; }
   .offers__title {
     font-size: 36px;
     line-height: 40px;
@@ -709,7 +732,7 @@ button {
     display: flex;
     padding-top: 70px;
     padding-bottom: 75px;
-    border-bottom: 1px solid #4C4C4C; }
+    border-bottom: 2px solid rgba(76, 76, 76, 0.15); }
   .footer__contacts {
     margin-right: 160px; }
   .footer__phone {
@@ -761,7 +784,10 @@ button {
     text-decoration: none;
     font-size: 18px;
     line-height: 21px;
-    color: #6F6F6F; }
+    color: #6F6F6F;
+    transition: all .3s; }
+    .footer__help-link:hover {
+      color: #F99F1B; }
   .footer__social-title {
     font-size: 18px;
     line-height: 21px;
