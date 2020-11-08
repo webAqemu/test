@@ -32,6 +32,8 @@
   }
 
   &__burger {
+    cursor: pointer;
+    display: none;
     position: relative;
     width: 24px;
     padding: 7px 0;
@@ -351,6 +353,12 @@
   &__img {
     position: absolute;
     left: 60px;
+    width: 409px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -530px;
+    background-image: url(../images/main-screen-1-1.png);
   }
 
   &__layer {
@@ -362,8 +370,6 @@
   }
 
   &__info {
-    max-width: 1200px;
-    width: 100%;
     background-color: #E5F7FF;
     padding-left: 540px;
     padding-top: 35px;
