@@ -26,5 +26,6 @@ $('.catalog__slider').slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true,
-  variableWidth: true
+  variableWidth: true,
+  infinite: false,
 });
