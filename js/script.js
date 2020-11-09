@@ -38,3 +38,16 @@ $('.catalog__slider').slick({
   variableWidth: true,
   infinite: false,
 });
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth <= 650) {
+    $('.catalog__slider').slick('unslick');
+    sliderIsLive = false;
+  }
+  else {
+    if (sliderIsLive) {
+      $('.catalog__slider').slick();
+      sliderIsLive = true;
+    }
+  }
+});

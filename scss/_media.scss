@@ -1,3 +1,19 @@
+@media (max-width: 1200px) {
+  .products {
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__title {
+      padding-left: 40px;
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     box-shadow: 0px 2px 4px rgba(0, 52, 156, 0.25);
@@ -64,6 +80,10 @@
   
   }
 
+  .request {
+    display: none;
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -104,6 +124,243 @@
   
   }
 
+  .products {
+    &__title {
+      font-size: 48px;
+      line-height: 54px;
+    }
+  }
+
+}
+
+@media (max-width: 650px) {
+  .products {
+    padding: 0;
+    margin: 0;
+
+    &__title {
+      padding-left: 0;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 30px;
+    }
+
+    &__inner {
+      background-color: $blue;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    &__wrapper {
+      min-height: auto;
+    }
+
+    &__item {
+      background-image: none;
+      padding: 0 15px;
+      background-color: $blue;
+      border-top: 1px solid #33BBFF;
+      height: 56px;
+      width: 100%;
+      overflow: hidden;
+      & + & {
+        margin-top: 0;
+      }
+
+      &:nth-child(4) {
+        border-bottom: 1px solid #33BBFF;
+      }
+    }
+
+    &__preview {
+      max-width: 100%;
+      margin-top: 15px;
+
+      & > svg {
+        transform: rotate(180deg);
+        width: 10px;
+        height: 6px;
+      }
+
+      & > svg > path {
+        fill: #ffffff;
+      }
+    }
+
+    &__item-icon {
+      display: block;
+    }
+
+    &__item-title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      opacity: 1;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__item-text {
+      font-size: 16px;
+      line-height: 21px;
+      padding-bottom: 0;
+    }
+
+    &__item-link {
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 0;
+      padding: 0;
+      width: 102px;
+      margin: 20px;
+      margin-left: auto;
+      display: none !important;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 7px;
+        width: 6px;
+        height: 10px;
+        background-image: url(../images/products-link-phone-arrow.svg);
+      }
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    &__item--active {
+      text-align: center;
+      height: 300px;
+      background-color: #0080Bf;
+      .products__item-title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+
+      &.products__item--big .products__item-text {
+        padding-bottom: 0px !important;
+      }
+
+      .products__item-link {
+        display: flex !important;
+      }
+
+      & .products__preview {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      & .products__item-icon {
+        margin-top: 15px;
+      }
+
+      & .products__preview > svg {
+        display: none;
+      }
+
+      & .products__item-icon {
+        transform: scale(1.5);
+      }
+    } 
+  }
+
+  .catalog {
+    background-image: none;
+    background-color: $blue;
+    &__inner {
+      padding-top: 65px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 50px;
+    }
+
+    &__slider {
+      padding-bottom: 0;
+    }
+
+    &__slide {
+      display: none;
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+
+    &__item {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    &__info {
+      height: 150px;
+      background-size: 100%;
+      padding: 0;
+    }
+
+    &__item-title {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 180px;
+      width: 100%;
+      position: absolute;
+      right: 10px;
+      top: -17px;
+    }
+
+    &__item-price {
+      font-size: 16px;
+      line-height: 21px;
+      display: inline-block;
+      position: absolute;
+      top: 55px;
+      right: 35px;
+    }
+
+    &__available {
+      position: absolute;
+      top: 91px;
+      right: 27px;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 5px 22px 8px;
+      height: auto;
+      opacity: 1;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: 19px;
+      padding: 9px 23px 13px;
+
+      & svg {
+        width: 6px;
+        height: 10px;
+        top: 15px;
+      }
+    }
+
+    &__all-link {
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 19px;
+      width: 122px;
+
+      & svg {
+        width: 6px;
+        height: 10px;
+        margin-bottom: -1px;
+        margin-left: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -139,4 +396,20 @@
   
   }
 
+}
+
+@media (max-width: 450px) {
+  .products {
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__item-title,
+    &__item-link,
+    &__item-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
