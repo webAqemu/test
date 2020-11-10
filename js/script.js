@@ -6,6 +6,12 @@ $(".header__item--hover").mouseout(function () {
   $("#layer").removeClass("active")
 });
 
+$('.header__burger').on('click', function () {
+
+  $('.header__burger').toggleClass('header__burger--active');
+
+});
+
 $('.main-screen__slider').slick({
   infinite: true,
   slidesToShow: 1,

@@ -37,6 +37,7 @@
     position: relative;
     width: 24px;
     padding: 7px 0;
+    transition: all .3s;
     &::after,
     &::before {
       content: "";
@@ -45,6 +46,7 @@
       min-height: 3px;
       background-color: #333333;
       left: 0;
+      transition: all .3s;
     }
 
     &::after {
@@ -54,6 +56,23 @@
     &::before {
       bottom: 0px;
     }
+
+    &--active {
+      &::before {
+        transform: rotate(45deg);
+        bottom: 7px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 7px;
+      }
+
+      & .header__burger-line {
+        opacity: 0;
+      }
+    }
+
 
   }
 
@@ -794,6 +813,7 @@
     height: 496px;
     border-left: 2px solid #E9E9E9;
     border-collapse: collapse;
+    background-color: #fff;
     &:hover {
       margin-top: -15px;
       margin-bottom: 15px;
@@ -921,11 +941,10 @@
   &__all {
     display: block;
     margin-top: 90px;
-    max-width: 152px;
+    max-width: 122px;
     margin-left: auto;
     text-decoration: none;
     color: $orange;
-    padding: 15px;
     transition: all .3s;
 
     & svg {
@@ -1023,6 +1042,8 @@
     outline: none;
     padding-left: 15px;
     padding-right: 50px;
+    color: $orange;
+    font-size: 16px;
 
     &::placeholder {
       @include h4;

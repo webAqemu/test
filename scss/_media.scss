@@ -97,8 +97,8 @@
 
 @media (max-width: 1000px) {
   .offers {
-    margin-top: 95px;
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 0px;
     overflow: hidden;
     height: 390px;
     & .container {
@@ -302,6 +302,7 @@
 
     &__wrapper {
       min-height: auto;
+      height: 498px;
     }
 
     &__item {
@@ -382,7 +383,7 @@
 
     &__item--active {
       text-align: center;
-      height: 300px;
+      height: 330px;
       background-color: #0080Bf;
       .products__item-title {
         padding-top: 10px;
@@ -579,13 +580,20 @@
 
       & span {
         margin-top: 0;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 14px;
         margin-left: 20px;
         &:nth-child(1) {
           margin-bottom: 14px;
         }
       }
+    }
+  }
+
+  .news {
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
     }
   }
 }
