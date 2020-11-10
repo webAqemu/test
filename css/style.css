@@ -1110,6 +1110,8 @@ button {
       opacity: 1;
       padding-top: 0;
       padding-bottom: 0; }
+      .products__item-title div {
+        display: inline-block; }
     .products__item-text {
       font-size: 16px;
       line-height: 21px;

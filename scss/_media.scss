@@ -389,6 +389,9 @@
       opacity: 1;
       padding-top: 0;
       padding-bottom: 0;
+      & div {
+        display: inline-block;
+      }
     }
 
     &__item-text {
