@@ -847,6 +847,8 @@ button {
     outline: none;
     padding-left: 15px;
     padding-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 12px;
     color: #F99F1B;
     font-size: 16px; }
     .footer__input::placeholder {
@@ -858,11 +860,12 @@ button {
   .footer__btn {
     position: absolute;
     right: 16px;
-    top: 12px;
+    top: 11px;
     background-color: transparent;
     border: none;
     box-shadow: none;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0; }
   .footer__help {
     margin-right: 95px; }
   .footer__help-item + .footer__help-item {

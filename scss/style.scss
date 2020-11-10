@@ -1042,6 +1042,8 @@
     outline: none;
     padding-left: 15px;
     padding-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 12px;
     color: $orange;
     font-size: 16px;
 
@@ -1056,11 +1058,12 @@
   &__btn {
     position: absolute;
     right: 16px;
-    top: 12px;
+    top: 11px;
     background-color: transparent;
     border: none;
     box-shadow: none;
     cursor: pointer;
+    padding: 0;
   }
 
   &__help {
