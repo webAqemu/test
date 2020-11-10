@@ -37,10 +37,4 @@ $('.catalog__slider').slick({
   dots: true,
   variableWidth: true,
   infinite: false,
-  responsive: [
-    {
-      breakpoint: 651,
-      settings: "unslick"
-    }
-  ]
 });

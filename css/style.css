@@ -503,6 +503,8 @@ button {
     margin-bottom: 80px; }
   .catalog__slider {
     padding-bottom: 85px; }
+  .catalog__phone-list {
+    display: none; }
   .catalog__slide {
     outline: none; }
   .catalog__items {
@@ -738,11 +740,20 @@ button {
       box-shadow: 0px 12px 34px rgba(0, 52, 156, 0.254972); }
       .news__item:hover .news__date {
         color: #F99F1B; }
+    .news__item + .news__item {
+      margin-left: 5px; }
+  .news__img {
+    background-image: url(../images/news-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 140px; }
   .news__text {
     font-size: 18px;
     line-height: 28px;
     color: #545454;
-    margin: 0 16px; }
+    margin: 15px 16px 0; }
   .news__date {
     margin: 0 16px;
     font-size: 14px;
@@ -762,11 +773,6 @@ button {
     .news__all svg {
       margin-left: 15px;
       margin-bottom: -3px; }
-    .news__all:hover {
-      color: #ffffff;
-      background-color: #F99F1B; }
-      .news__all:hover svg path {
-        fill: #ffffff; }
 
 .footer {
   background-color: #292929; }
@@ -895,6 +901,7 @@ button {
 @media (max-width: 1000px) {
   .offers {
     margin-top: 95px;
+    margin-bottom: 70px;
     overflow: hidden;
     height: 390px; }
     .offers .container {
@@ -929,7 +936,45 @@ button {
       font-size: 32px;
       line-height: 39px; }
       .offers__price > div {
-        display: none; } }
+        display: none; }
+  .news__wrapper {
+    justify-content: flex-start; }
+  .news__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 25px; }
+  .news__item {
+    display: flex;
+    max-width: 330px;
+    padding: 0; }
+    .news__item:nth-child(3), .news__item:nth-child(4) {
+      display: none; }
+    .news__item + .news__item {
+      margin-left: 15px; }
+    .news__item:hover {
+      margin-top: 0;
+      margin-bottom: 0;
+      box-shadow: none; }
+  .news__img {
+    max-width: 72px;
+    width: 100%;
+    height: 80px;
+    background-size: 240%; }
+  .news__info {
+    display: flex;
+    flex-direction: column-reverse; }
+  .news__date {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0; }
+  .news__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    font-family: 'HelveticaNeue-Medium', sans-serif;
+    font-weight: 500; }
+  .news__all {
+    margin-top: 30px; } }
 
 @media (max-width: 850px) {
   .container {
@@ -954,6 +999,13 @@ button {
   .products__title {
     font-size: 48px;
     line-height: 54px; } }
+
+@media (max-width: 850px) {
+  .news__wrapper {
+    flex-direction: column; }
+  .news__item + .news__item {
+    margin-left: 0;
+    margin-top: 25px; } }
 
 @media (max-width: 650px) {
   .products {
@@ -1056,9 +1108,9 @@ button {
       line-height: 48px;
       margin-bottom: 50px; }
     .catalog__slider {
-      padding-bottom: 0; }
-      .catalog__slider > .catalog__slide {
-        display: none; }
+      display: none; }
+    .catalog__phone-list {
+      display: block; }
     .catalog__item {
       max-width: 100%;
       margin: 0; }
