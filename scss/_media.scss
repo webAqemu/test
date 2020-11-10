@@ -277,10 +277,10 @@
   }
 
   .offers {
-    &__inner {
-      display: block;
-      max-width: 300px;
-    }
+    // &__inner {
+    //   display: block;
+    //   max-width: 300px;
+    // }
 
     & .offers__slide.slick-current > .offers__item {
         margin-top: -15px;

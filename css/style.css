@@ -670,7 +670,8 @@ button {
   margin-top: 175px;
   margin-bottom: 100px; }
   .offers__inner {
-    display: flex; }
+    display: block;
+    max-width: 300px; }
   .offers .slick-list {
     overflow: visible; }
   .offers__slide {
@@ -1044,9 +1045,6 @@ button {
   .products__title {
     font-size: 48px;
     line-height: 54px; }
-  .offers__inner {
-    display: block;
-    max-width: 300px; }
   .offers .offers__slide.slick-current > .offers__item {
     margin-top: -15px;
     margin-bottom: 15px;

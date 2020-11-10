@@ -798,7 +798,8 @@
   margin-bottom: 100px;
 
   &__inner {
-    display: flex;
+    display: block;
+    max-width: 300px;
   }
   & .slick-list {
     overflow: visible;
