@@ -549,6 +549,10 @@
       @include h4;
     }
 
+    &__form {
+      display: block;
+    }
+
     &__bottom {
       flex-direction: column-reverse;
       padding: 0;

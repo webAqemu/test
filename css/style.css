@@ -826,6 +826,7 @@ button {
       line-height: 21px;
       color: #6F6F6F; }
   .footer__form {
+    display: none;
     position: relative;
     margin: 44px 0 42px; }
   .footer__input {
@@ -1215,6 +1216,8 @@ button {
     line-height: 24px;
     font-family: 'HelveticaNeue', sans-serif;
     font-weight: 400; }
+  .footer__form {
+    display: block; }
   .footer__bottom {
     flex-direction: column-reverse;
     padding: 0; }
