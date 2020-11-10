@@ -630,6 +630,7 @@ button {
   background-image: url(../images/request-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center bottom;
   padding: 50px 0 80px;
   color: #ffffff; }
   .request__title {
