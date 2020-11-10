@@ -44,3 +44,21 @@ $('.catalog__slider').slick({
   variableWidth: true,
   infinite: false,
 });
+
+$('.offers__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  variableWidth: true,
+  infinite: false,
+  swipeToSlide: true,
+  // responsive: [
+  //   {
+  //     breakpoint: 849,
+  //     settings: {
+  //       slidesToShow: 2,
+  //     }
+  //   },
+  // ]
+});

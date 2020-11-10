@@ -800,10 +800,27 @@
   &__inner {
     display: flex;
   }
+  & .slick-list {
+    overflow: visible;
+  } 
+
+  &__slide {
+    outline: none;
+    max-width: 360px;
+    width: 100%;
+    border-left: 2px solid #E9E9E9;
+    &:nth-last-child(1) {
+      border-right: 2px solid #E9E9E9;
+      &:hover {
+        border-right-width: 1px;
+      }
+    }
+  }
 
   &__item {
+    outline: none;
     padding: 30px 17px 67px 28px;
-    width: 33.3%;
+    width: 100%;
     text-decoration: none;
     transition-property: margin, box-shadow; 
     transition-duration: .3s; 
@@ -811,7 +828,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 496px;
-    border-left: 2px solid #E9E9E9;
     border-collapse: collapse;
     background-color: #fff;
     &:hover {
@@ -831,13 +847,6 @@
 
       & .offers__price {
         color: $orange;
-      }
-    }
-
-    &:nth-last-child(1) {
-      border-right: 2px solid #E9E9E9;
-      &:hover {
-        border-right-width: 1px;
       }
     }
 
