@@ -339,13 +339,8 @@
 
     &__slider {
       padding-bottom: 0;
-    }
-
-    &__slide {
-      display: none;
-      &:nth-child(1),
-      &:nth-child(2) {
-        display: block;
+      & > .catalog__slide {
+        display: none;
       }
     }
 

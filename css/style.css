@@ -1057,10 +1057,8 @@ button {
       margin-bottom: 50px; }
     .catalog__slider {
       padding-bottom: 0; }
-    .catalog__slide {
-      display: none; }
-      .catalog__slide:nth-child(1), .catalog__slide:nth-child(2) {
-        display: block; }
+      .catalog__slider > .catalog__slide {
+        display: none; }
     .catalog__item {
       max-width: 100%;
       margin: 0; }
