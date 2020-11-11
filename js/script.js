@@ -53,12 +53,4 @@ $('.offers__slider').slick({
   variableWidth: true,
   infinite: false,
   swipeToSlide: true,
-  // responsive: [
-  //   {
-  //     breakpoint: 849,
-  //     settings: {
-  //       slidesToShow: 2,
-  //     }
-  //   },
-  // ]
 });
