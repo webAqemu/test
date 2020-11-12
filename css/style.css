@@ -799,7 +799,7 @@ button {
   .news__all {
     display: block;
     margin-top: 90px;
-    max-width: 122px;
+    width: 130px;
     margin-left: auto;
     text-decoration: none;
     color: #F99F1B;
