@@ -54,3 +54,16 @@ $('.offers__slider').slick({
   infinite: false,
   swipeToSlide: true,
 });
+
+// const firstOffer = document.querySelector(".offers__slide--1");
+// const secondOffer = document.querySelector(".offers__slide--2");
+// const thirdOffer = document.querySelector(".offers__slide--3");
+
+$(".offers__slide--2").mouseover(function () {
+  $(".offers__slide--1").addClass("active")
+  $(".offers__slide--3").addClass("active")
+});
+$(".offers__slide--2").mouseout(function () {
+  $(".offers__slide--1").removeClass("active")
+  $(".offers__slide--3").removeClass("active")
+});
