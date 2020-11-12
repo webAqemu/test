@@ -1246,6 +1246,9 @@ button {
     .offers .offers__slide.slick-current > .offers__item .offers__title {
       color: #333333;
       transition: all .3s; }
+  .offers__slide:hover .offers__item {
+    position: relative;
+    z-index: 0; }
   .footer__inner {
     padding-top: 30px;
     padding-bottom: 56px; }
